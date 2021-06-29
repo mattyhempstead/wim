@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Create application containing entire X display for testing
 Xephyr -ac -screen 1280x720 -br -reset -terminate 2> /dev/null :1 &
 DISPLAY=:1
@@ -11,4 +13,4 @@ echo Starting tinywm
 # as this is on display :1, it will appear in tinywm
 
 st &
-./build/tinywm-xcb
+./build/tinywm-"$1"

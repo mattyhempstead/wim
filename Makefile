@@ -1,5 +1,9 @@
 CC=gcc
-.PHONY=clean
+.PHONY=clean start
+
+build/tinywm-xcb-ada: src/tinywm-xcb-ada.c
+	mkdir -p build
+	$(CC) $< -lxcb -o $@
 
 build/tinywm-xcb: src/tinywm-xcb.c
 	mkdir -p build
@@ -11,3 +15,6 @@ build/tinywm-x11: src/tinywm-x11.c
 
 clean:
 	rm -r build
+
+start:
+	./start.sh xcb-ada
