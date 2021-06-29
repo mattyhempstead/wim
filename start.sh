@@ -9,7 +9,6 @@ echo Starting tinywm
 
 # start a terminal
 # as this is on display :1, it will appear in tinywm
-urxvt &
 
-../build/tinywm
-
+st &
+./build/tinywm-xcb
