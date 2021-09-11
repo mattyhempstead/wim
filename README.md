@@ -1,7 +1,5 @@
-# WiM
+# WiM [WIP]
 
 imagine being so pedantic that you decide to write your own window manager
 
-
-ty tinywm for the boilerplate
-
+currently on hold while I wait for nvidia to support wlroots
